@@ -1,0 +1,104 @@
+.cta{
+    width:8rem;
+    height:3rem;
+    background-color: #a82953;
+    color: white;
+    border: .1rem solid #8a2043;
+    
+    font-size: 1rem;
+    font-weight: 400;
+    cursor: pointer;
+    transition: 0.2s ease-in;
+}
+
+.cta:hover{
+    color: #a82953;
+    background-color: white;
+}
+
+.cb{
+    width:8rem;
+    height:2.5rem;
+    background-color: transparent;
+    border: 3px solid white;
+    color: white;
+
+}
+
+.cb:hover{
+    background-color: rgb(255, 255, 255);
+    color:grey;
+    
+}
+
+
+.mb{
+    width: 6rem;
+    height:2.5rem;
+    border: .2rem solid #8a2043;
+    color: #8a2043;
+    background-color: white;
+    
+
+}
+
+.bb{
+    margin-bottom: .6rem;
+    width:12rem;
+    height:2rem;
+    color: white;
+    background: transparent;
+    border:.1rem solid  white;
+}
+
+@media(min-width:1024px){
+    
+    .cta{
+        width:9rem;
+        height:3.5rem;
+        font-size: 1.3rem;
+        font-weight: 500;
+    }
+
+    .card__button{
+        .cb{
+            width:7rem;
+            height: 2.5rem;
+            font-size: 1rem;
+        }
+    }
+
+    
+}
+
+@media(min-width:1440px){
+    .cta{
+        width:10rem;
+        height:4rem;
+        font-size: 1.4rem;
+        font-weight: 500;
+    }
+
+    .card__button{
+        .cb{
+            width: 8rem;
+            height: 3rem;
+        }
+    }
+}
+
+
+
+@media(min-width:768px){
+    .cb{
+        width:4.5rem;
+        height:2rem;
+        font-size: .7rem;
+    }
+
+    .mb{
+        width:7rem;
+        height:3rem;
+        font-size: 1rem;
+    }
+}

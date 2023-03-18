@@ -1,0 +1,182 @@
+.footer{
+    width:100%;
+    height:90vh;
+    background-color: rgb(0, 0, 0);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+    .footer__grid{
+        width:80%;
+        height:90%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-auto-columns: 1fr;
+        gap: 2% 4%;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "footer__signup footer__signup"
+          "footer__logo footer__logo"
+          "footer__logo footer__logo"
+          "footer__about footer__help"
+          "footer__about footer__help"
+          "footer__services footer__explore"
+          "footer__services footer__explore";
+
+          .footer__logo { 
+            grid-area: footer__logo;
+            width:100%;
+            height:100%;
+            
+
+            img{
+                width:100%;
+                height:100%;
+                object-fit: contain;
+            }
+         }
+      
+      .footer__signup { 
+        grid-area: footer__signup;
+        width:100%;
+        height:100%;
+        background-color: rgb(20, 20, 20);
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        color: white;
+     }
+      
+      .footer__about { 
+        grid-area: footer__about;
+        width:100%;
+        height:100%;
+        
+        color: white;
+
+        .footer__text{
+            h3{
+                font-size: 1rem;
+                margin-bottom: 1rem;
+            }
+            
+        }
+     }
+      
+      .footer__help { 
+        grid-area: footer__help;
+        width:100%;
+        height:100%;
+        
+        color: white;
+
+        .footer__text{
+          h3{
+              font-size: 1rem;
+              margin-bottom: 1rem;
+          }
+          
+      }
+     }
+      
+      .footer__services { 
+        grid-area: footer__services;
+        width:100%;
+        height:100%;
+  
+        color: white;
+        .footer__text{
+          h3{
+              font-size: 1rem;
+              margin-bottom: 1rem;
+          }
+          
+      }
+     }
+      
+      .footer__explore { 
+        grid-area: footer__explore;
+        height:100%;
+        width:100%;
+
+        color: white;
+        .footer__text{
+          h3{
+              font-size: 1rem;
+              margin-bottom: 1rem;
+          }
+          
+      }
+     }
+      }
+    }
+    
+
+@media(min-width:768px){
+    .footer{
+        height:60vh;
+        .footer__grid{
+        display: grid; 
+        grid-auto-columns: 1fr; 
+        grid-template-columns: 1fr 1fr 1fr 1fr; 
+        grid-template-rows: 1fr 1fr 1fr; 
+        gap: 4% 4%; 
+        grid-template-areas: 
+          "footer__signup footer__signup footer__signup footer__signup"
+          "footer__logo footer__logo footer__about footer__help"
+          "footer__logo footer__logo footer__services footer__explore"; 
+      
+          .footer__signup { grid-area: footer__signup; }
+          .footer__logo { 
+            grid-area: footer__logo;
+
+           }
+          .footer__about { 
+            grid-area: footer__about;
+
+            .footer__text{
+              ul{
+                li{
+                  font-size: .8rem;
+                }
+              }
+            }
+           }
+          .footer__help { 
+            grid-area: footer__help;
+            .footer__text{
+              ul{
+                li{
+                  font-size: .8rem;
+                }
+              }
+            }
+           }
+          .footer__services { 
+            grid-area: footer__services;
+            .footer__text{
+              ul{
+                li{
+                  font-size: .8rem;
+                }
+              }
+            }
+           }
+          .footer__explore { 
+            grid-area: footer__explore;
+            .footer__text{
+              ul{
+                li{
+                  font-size: .8rem;
+                }
+              }
+            }
+           }
+      
+        }
+
+    }
+}
+

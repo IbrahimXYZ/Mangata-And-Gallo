@@ -1,0 +1,129 @@
+.diamonds{
+    width:100%;
+    height:110vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+
+    .diamonds__header{
+        width:90%;
+        height:7%;
+        h1{
+            text-align: center;
+            margin-top: .5rem;
+        }
+    }
+
+    .diamonds__grid{
+        width:80%;
+        height:90%;
+        background-color: rgb(255, 255, 255);
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        gap: 4% 7%;
+        grid-auto-flow: row;
+        grid-template-areas:
+              ". ."
+              ". ."
+              ". ."
+              ". .";
+
+              .grid__box{
+                width:100%;
+                height:100%;
+                display: flex;
+                flex-direction: column;
+
+                .box__image{
+                    width:100%;
+                    height:80%;
+                    background-color: rgb(255, 255, 255);
+                    
+                    img{
+                        width:100%;
+                        height:100%;
+                        object-fit: cover;
+                    }
+                }
+
+                .box__text{
+                    width:100%;
+                    height:20%;
+                    
+
+                    p{
+                        text-align: center;
+                        font-weight: 300;
+                        font-size: 1rem;
+                        margin-top: 0.5rem;
+                    }
+                }
+
+              }
+              .grid__box:hover{
+                .box__image{
+                    transform: scale(1.05);
+                }
+
+                .box__text{
+                    p{
+                        color: rgb(0, 162, 255);
+                    }
+                }
+              }
+        
+          
+    }
+}
+
+
+@media(min-width:728px){
+    .diamonds{
+        height:60vh;
+
+        .diamonds__header{
+            height: 10%;
+        }
+
+
+        .diamonds__grid {  
+            width:80%;
+            height:60%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 8% 4%;
+            grid-auto-flow: row;
+            grid-template-areas:
+              ". . . ."
+              ". . . .";
+        }
+          
+    }
+}
+
+
+@media(min-width:1024px){
+    .diamonds{
+        height:40vh;
+
+        .diamonds__header{
+            height:18%;
+        }
+
+        .diamonds__grid { 
+            width:95%;
+            height:37%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr;
+            gap: 4% 2%;
+            grid-auto-flow: row;
+            grid-template-areas:
+              ". . . . . . . .";
+          }
+          
+    }
+}

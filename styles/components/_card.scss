@@ -1,0 +1,221 @@
+.card{
+    width: 100%;
+    height:100%;
+    
+    background-size: cover;
+    padding:1.5rem;
+
+    
+    
+}
+
+.one{
+    background:linear-gradient(0deg, rgba(214, 206, 206, 0.5), rgba(0, 0, 0, 0.5)),/* the gradient on top, adjust color and opacity to your taste */
+    url('../images/hero/model.jpg');
+    background-size: cover;
+}
+.two{
+    background:linear-gradient(0deg, rgba(207, 200, 200, 0.5), rgba(0, 0, 0, 0.5)),/* the gradient on top, adjust color and opacity to your taste */
+    url('../images/cards/earings.jpg');
+    background-size: cover;
+}
+.three{
+    background:linear-gradient(0deg, rgba(189, 186, 186, 0.5), rgba(0, 0, 0, 0.5)),/* the gradient on top, adjust color and opacity to your taste */
+    url('../images/cards/bracelet.jpg');
+    background-size: cover;
+}
+.popular__card{
+    width: 100%;
+    height: 100%;
+    border: 1px solid grey;
+
+    .popular__card__image{
+        width:100%;
+        height:60%;
+
+        img{
+            width:100%;
+            height:100%;
+            object-fit: cover;
+            
+        }
+    }
+
+    .popular__card__text{
+        width:100%;
+        height:40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        .ring__name{
+            width:100%;
+            height: 40%;
+            text-align: center;
+            
+            
+    
+            p{
+                font-style: italic;
+                color: #4d4c4c;
+            }
+        }
+
+        .ring__price{
+            width: 60%;
+            height: 30%;
+            display: flex;
+            text-align: center;
+            justify-self: center;
+            flex-direction: column;
+            margin:0 auto;
+            color: white;
+            background-color: #a82953;
+
+            p{
+                font-size: .7rem;
+                font-style: italic;
+            }
+            
+        }
+    }
+}
+
+
+@media(min-width:768px){
+    .card{
+        padding:1rem;
+    }
+
+    .popular__card{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    
+        .popular__card__image{
+            width:100%;
+            height:50%;
+    
+            img{
+                width:100%;
+                height:100%;
+                object-fit: cover;
+                
+            }
+        }
+    
+        .popular__card__text{
+            width:100%;
+            height:40%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+    
+            .ring__name{
+                width:100%;
+                height: 40%;
+                text-align: center;
+                
+                h1{
+                    font-size: 1.1rem;
+                }
+        
+                p{
+                    
+                    font-size: .65rem;
+                }
+            }
+    
+            .ring__price{
+                width: 80%;
+                height: 30%;
+
+                
+                h3{
+                    font-size: .8rem;
+                }
+    
+                p{
+                    font-size: .7rem;
+                    font-style: italic;
+                }
+                
+            }
+        }
+}}
+
+@media(min-width:1024px){
+    .card{
+        padding:1.5rem;
+    }
+    .popular__card{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    
+        .popular__card__image{
+            width:100%;
+            height:50%;
+ 
+    
+            img{
+                width:100%;
+                height:100%;
+                object-fit: cover;
+                
+            }
+        }
+    
+        .popular__card__text{
+            width:100%;
+            height:50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            
+    
+            .ring__name{
+                width:100%;
+                height: 40%;
+                text-align: center;
+                
+                h1{
+                    font-size: 1.7rem;
+                }
+        
+                p{
+                    
+                    font-size: .8rem;
+                }
+            }
+    
+            .ring__price{
+                width: 90%;
+                height: 30%;
+                
+                h3{
+                    font-size: 1.2rem;
+                    margin:auto 0;
+                }
+    
+                p{
+                    font-size: .8rem;
+                    font-style: italic;
+                    margin: auto 0;
+                }
+                
+            }
+        }
+}}
+
+@media(min-width:1440px){
+    .popular__card{
+        .popular__card__text{
+            align-items: center;
+        }
+    }
+}
